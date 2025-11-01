@@ -1145,7 +1145,7 @@ async function menu(){
         {name:'🚀 Test SELL sekali (submit sekarang)', value:'oneshot'},
         {name:'⚡ Auto-sell ON/OFF (DEX-only per token)', value:'toggle_dex'},
         {name:'⚡ Auto-sell GLOBAL ON/OFF (multi token)', value:'toggle_global'},
-        {name:'🎯 Set TP Harga & Sell %', lue:'set_tp'},
+        {name:'🎯 Set TP Harga & Sell %', value:'set_tp'},
         {name:'🎯 Auto-TP ON/OFF (harga target)', value:'toggle_tp'},
         {name:'🌐 Atur ambang BUY (SUI) — GLOBAL', value:'global_min_buy_set'},
         {name:`🌐 Mode GLOBAL ambang BUY: ${GLOBAL.useGlobalMin ? 'ON' : 'OFF'}`, value:'global_min_buy_toggle'},

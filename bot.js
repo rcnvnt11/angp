@@ -815,6 +815,7 @@ async function detectLoop(coinType){
             if(seenTx.size>2000) seenTx=new Set([...seenTx].slice(-700));
 
             // GUARD: TX sender OWNER → ski           const txSender = lower(tx?.effects?.sender || tx?.transaction?.data?.sender || '');
+            const txSender = lower(tx?.effects?.sender || tx?.transaction?.data?.sender || '');
             if (txSender === lower(OWNER)) continue;
 
             const targets = parseMoveCallTargets(tx);
